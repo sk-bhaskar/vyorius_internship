@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- VLC Video Layout -->
+    <org.videolan.libvlc.util.VLCVideoLayout
+        android:id="@+id/vlc_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RTSP URL Input (Optional, if you want dynamic input) -->
+    <EditText
+        android:id="@+id/etRtspUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter RTSP URL"
+        android:inputType="textUri"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Stream Button -->
+    <Button
+        android:id="@+id/btnStream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Stream"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Record Button -->
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Recording" />
+
+</LinearLayout>
